@@ -1,0 +1,11 @@
+.calc-button:hover{
+    color: white ;
+}
+.input-width{
+    width: 25%;
+}
+.money-image{
+    margin-left: 0;
+    width: 750px;
+    height: 500px;
+}

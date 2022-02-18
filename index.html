@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Household Money Calculator 🏠💵</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <h2 id="wrong" style="display: none;">Wrong Input</h2>
+        <div class="container">
+            <h1 class="text-center text-info my-4">Household Money Calculator 💰</h1>
+            <div class="row d-flex justify-content-center align-items-center">
+                <!-- Left Image Box -->
+                <div class="col-md-6">
+                    <img src="images/leftimg.png" alt="" class="img-fluid" />
+                </div>
+                <!-- Left Image Box -->
+
+                <!-- Right Calculator Box -->
+                <div class="col-md-6">
+                    <div class="col-12">
+                        <!-- Error Alert -->
+                        <div id="alerts" class="alert alert-danger alert-dismissible fade" role="alert">
+                            <strong id="alertText">Alert Message</strong>
+                            <button type="button" id="btn-close" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <!-- Error Alert -->
+                    </div>
+
+                    <div class="col-12">
+                        <h2 class="text-center mb-5">Calculate Here</h2>
+                    </div>
+
+                    <!-- Calculation Section -->
+                    <div class="col-8 mx-auto">
+                        <div class="row mb-3">
+                            <label for="income-input" class="col-sm-2 col-form-label">Income</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="income-input" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5 class="text-center mb-3">Expenses</h5>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="food-input" class="col-sm-2 col-form-label">Food</label>
+                            <div class="col-sm-10">
+                                <input type="text" value="0" class="form-control" id="food-input" />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="rent-input" class="col-sm-2 col-form-label">Rent</label>
+                            <div class="col-sm-10">
+                                <input type="text" value="0" class="form-control" id="rent-input" />
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="cloth-input" class="col-sm-2 col-form-label">Cloth</label>
+                            <div class="col-sm-10">
+                                <input type="text" value="0" class="form-control" id="cloth-input" />
+                            </div>
+                        </div>
+
+                        <div class="row text-center mb-5">
+                            <div class="col-12">
+                                <button class="btn btn-outline-info" id="calc-button">
+                                    Calculate
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Calculation Resilt -->
+                        <div class="row">
+                            <h4 class="text-center pb-2">
+                                Total Expenses: <span id="expenses">0</span>
+                            </h4>
+                            <h4 class="text-center pb-3">
+                                Balance: <span id="balance">0</span>
+                            </h4>
+                        </div>
+                        <!-- Calculation Resilt -->
+
+                    </div>
+                    <!-- Calculation Section -->
+
+                    <div class="col-12 mx-auto">
+                        <!-- Save amount -->
+                        <h5 class="text-center">Save:
+                            <span class="tex-center">
+                                <input type="text" class="w-25 border border-secondary rounded mx-3" id="saved-input" />
+                            </span>
+                            %
+                            <button class="btn btn-outline-info calc-button px-5 ms-3" id="saving-button">
+                                Save
+                            </button>
+                        </h5>
+                        <!-- Save Account -->
+
+                        <!-- Calculation Resilt -->
+                        <h4 class="text-center">
+                            Saving Amount: <span id="saved-balance">0</span>
+                        </h4>
+                        <h4 class="text-center">
+                            Remaining Balance: <span id="remaining-balance">0</span>
+                        </h4>
+                        <!-- Calculation Resilt -->
+                    </div>
+
+                </div>
+                <!-- Right Calculator Box -->
+            </div>
+        </div>
+
+
+        <!-- Script tag -->
+        <script src="js/custom.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Script tag -->
+    </body>
+
+</html>
