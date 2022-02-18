@@ -25,7 +25,7 @@ function calculateExpense(){
         document.getElementById("alertText").innerText = "Income field can't be empty or text";
         document.getElementById("alerts").classList.add("show");
 
-    } else if((totalIncome || expenseOne || expenseTwo || expenseThree) < 0){
+    } else if(totalIncome < 0 || expenseOne < 0 || expenseTwo < 0 || expenseThree < 0){
         document.getElementById("alertText").innerText = "Negetive values are not aceepted";
         document.getElementById("alerts").classList.add("show");
 
